@@ -7,12 +7,17 @@ body {
   width: 550px;
   height: 775px;
   background: #f4f4f4;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 10px;
 }
 .hero {
   height: 235px;
   background: #6943ff;
   color: white;
   padding: 40px;
+  border-radius: 10px 10px 0px 0px;
 }
 .result {
   width: 500px;
@@ -23,9 +28,9 @@ body {
   margin: 0 auto;
   margin-top: 25px;
 }
-h1 {
+h2 {
   font-size: 28px;
-  line-height: 38px;
+  font-weight: 800;
 }
 h4 {
   color: #5a537b;
