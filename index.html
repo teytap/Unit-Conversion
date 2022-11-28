@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -17,20 +17,37 @@
     <div class="container">
       <div class="hero">
         <h2>Metric/Imperial Unit Conversion</h2>
-        <input type="text" placeholder="20" />
-        <button>Convert</button>
+        <input type="text" placeholder="20" id="numberInput" />
+        <button id="convert-btn">Convert</button>
       </div>
       <div class="result" id="length">
         <h4>Length(Meter/Feet)</h4>
-        <p>20 meters = 65.616 feet | 20 feet = 6.096 meters</p>
+        <p>
+          <span id="meterToFeet">20 meters = 65.616 feet</span> |
+          <span id="feetToMeter">20 feet = 6.096 meters</span>
+        </p>
       </div>
       <div class="result" id="volume">
         <h4>Volume (Liters/Gallons)</h4>
-        <p>20 liters = 5.284 gallons | 20 gallons = 75.708 liters</p>
+        <p>
+          <span id="literToGallon">20 liters = 5.284 gallons</span> |
+          <span id="gallonToLiter">20 gallons = 75.708 liters</span>
+        </p>
       </div>
       <div class="result" id="Mass">
         <h4>Mass (Kilograms/Pounds)</h4>
-        <p>20 kilos = 44.092 pounds | 20 pounds = 9.072 kilos</p>
+        <p>
+          <span id="kiloToPound">20 kilos = 44.092 pounds</span> |
+          <span id="poundToKilo">20 pounds = 9.072 kilos</span>
+        </p>
+      </div>
+      <div class="result" id="Mass">
+        <h4>Temperature (Celcius/Fahrenheit)</h4>
+        <p>
+          <span id="celciusToFahrenheit">20° Celcius = 44.092° Fahrenheit</span>
+          |
+          <span id="fahrenheitToCelcius">20° Farenheit = 9.072° Celcius</span>
+        </p>
       </div>
     </div>
     <script src="App.js"></script>
